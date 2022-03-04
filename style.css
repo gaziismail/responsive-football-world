@@ -1,0 +1,253 @@
+
+/* -------------------
+poppins fonts
+------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* -------------------
+common styles
+------------------- */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.half-width{
+    width: 50%;
+}
+.anchor-btn{
+text-decoration: none;
+font-size: 16px;
+color: white;
+padding: 10px 24px;
+background-color: #E02C6D;
+}
+
+
+/* -------------------
+header styles
+------------------- */
+#nevigation-bar {
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 42px;
+}
+#nevigation-bar div a {
+    text-decoration: none;
+    color: white;
+    margin-right: 36px;
+}
+.header-bg{
+    width: 1920px;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.header-container{
+    width: 1145px;
+    height: 438px;
+    display: flex;
+    margin: auto;
+    margin-top: 67px;
+}
+#header-content{
+    margin-right: 102px;
+}
+#header-content div h1{
+    font-size: 64px;
+    color: white;
+}
+.anchor-btn i{
+    margin-left: 8px;
+}
+.header-image{
+    transition: width 0.5s, height 0.5s ease-in;
+}
+.header-image:hover {
+    width: 55%;
+    height: 55%;
+}
+.header-image img{
+    width: 100%;
+}
+
+
+/* -------------------
+all players styles
+------------------- */
+main{
+    margin-top: 70px;
+}
+.container {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin: auto;
+}
+.single-player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 10px 10px 20px lightgray;
+}
+.player{
+    padding: 15px;
+}
+.blog-thumbnail{
+    width: 300px;
+}
+.blog-thumbnail img{
+    width: 100%;
+}
+.blog-details{
+    width: 300px;
+}
+.blog-details h3{
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.blog-details p{
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* -------------------
+highlights styles
+------------------- */
+#highlights-container{
+    margin-top: 165px;
+}
+#highlights-section{
+    width: 1100px;
+    display: flex;
+    margin: auto;
+}
+#highlights-detail{
+    width: 469px;
+}
+#highlights-detail h2{
+    font-size: 48px;
+}
+#highlights-detail p{
+    font-size: 16px;
+}
+#highlights-image{
+    width: 100%;
+}
+
+
+/* -------------------
+bonus section styles
+------------------- */
+#input-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.user-input-section{
+    margin-right: 100px;
+    text-align: center;
+}
+.input{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#comment-btn{
+    margin-left: 20px;
+    border: none;
+    background-color: lightskyblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+#email-send-btn{
+    margin-left: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: tomato;
+}
+
+
+
+/* -------------------
+footer styles
+------------------- */
+.footer-container{
+    margin-top: 160px;
+}
+.football-logo{
+    margin-bottom: 20px;
+}
+.football-logo img{
+    width: 485px;
+    height: 110px;
+}
+.social-icons{
+    margin-bottom: 20px;
+}
+.icon{
+    text-decoration: none;
+    margin-right: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(11, 13, 23, 0.1)
+}
+.fab{
+    font-size: 20px;
+    color: #969BAB;
+}
+.copyright{
+    font-size: 18px;
+}
+.copyright p{
+    margin-top: 0;
+    margin-bottom: 63px;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------------------
+media query styles for responsive
+------------------- */
+@media (max-width: 700px) {
+    .header-bg{
+        width: 700px;
+        height: 950px;
+        margin-bottom: 200px;
+    }
+    .header-container {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    #header-content{
+        margin-bottom: 50px;
+    }
+    .header-image {
+        width: 500px;
+
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-container{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+}
